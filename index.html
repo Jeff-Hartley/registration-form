@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - Registraion Form</title>
+    
+    <script src="./script.js"></script>
+    
+
+    <!--The CSS code of the website-->
+    <style>
+        
+
+        html {
+            background-color: rgb(180, 173, 218);
+        }
+
+        h1 {
+            color: rgb(48, 33, 129);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 100;
+            font-size: 80px;
+            margin: 15px;
+        }
+
+        h3 {
+            color: rgb(22, 77, 87);
+            text-align: right;
+        }
+        p {
+            margin: 15px;
+        }
+
+        img {
+            height: 300px;
+            width: 350px;
+            margin: 15px;
+        }
+
+        hr {
+            color: rgb(48, 33, 129);
+            width: 50%;
+        }
+
+        form {
+            margin: 15px;
+        }
+
+        label {
+            color: rgb(48, 33, 129);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        input {
+            background-color: black;
+            border-color: rgb(48, 33, 129);
+            color: rgb(180, 173, 218);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        legend {
+            color: rgb(48, 33, 129);
+        }
+
+        button {
+            background-color: black;
+            color: rgb(180, 173, 218);
+            border-color: rgb(48, 33, 129);
+        }
+    </style>
+
+</head>
+<body>
+    <!--Header, paragraphs & images for the page-->
+    <h1><u>COOL DOGS DAILY</u></h1>
+    <p>I know what you're thinking. You need more dogs in your life. At Cool Dogs Daily, we will send pictures of cool dogs daily.</p>
+    <p>Don't believe us? This is just a small sample of what we have in our catalogue.</p>
+    <img src="https://thumbs.dreamstime.com/b/drunk-dog-drinking-cocktail-cool-french-bulldog-cheering-toast-martini-drink-looking-up-to-owner-isolated-white-150127283.jpg" alt="Very cool dog.">
+    <p>Not sold yet? Here's one more freebie.</p>
+    <img src="https://st.depositphotos.com/1146092/4777/i/450/depositphotos_47770061-stock-photo-cool-dog.jpg" alt="Wow, this dog is REALLY cool.">
+    <p>That's all you get until you sign up. The process is easy. You know you want cool dogs in your life. Join us.</p>
+    <hr><br>
+    
+    <!--beginning of the field.-->
+    <p>Please enter the following requested information to sign up for daily pictures of the coolest dogs on the internet.</p>
+    
+    <form action="#" method="POST">
+        <!-- Input fields will go below -->
+        
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+        
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" required><br><br>
+        
+        <label for="provstate">Province/State:</label><br>
+        <input type="text" id="provstate" name="provstate" required><br><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="telephone">Telephone Number:</label><br>
+        <input type="number" id="telephone" name="telephone"  required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label for="dob">Date Of Birth</label><br>
+        <input type="date" id="dob" name="dob" required></input><br><br>
+
+        <!--fieldset for the gender option.-->
+        <fieldset>
+            <legend>Gender:</legend>
+            <label><input type="radio" name="gender" value="male" required>Male</label><br>
+            <label><input type="radio" name="gender" value="female" required>Female</label><br>
+            <label><input type="radio" name="gender" value="nonbinary" required>Non-Binary</label><br>
+            <label><input type="radio" name="gender" value="other" required>Other</label><br>
+        </fieldset><br>
+        
+        <p><b>Terms and Conditions:</b></p>
+        <p><i>I agree to not act crazy on this website. If I fail to follow the Terms and Conditions I owe the website creator $1,000,000.</i></p>
+        <label><input type="checkbox" name="toc" required>I agree to the Terms and Conditions</label><br>
+        <!--The mailing list is NOT REQUIRED. You do not have to sign up for it.-->
+        <label><input type="checkbox" name="mailinglist">Join our mailing list for future offers</label><br><br>
+    
+        <!--Submit button-->
+        <button type="submit">Submit</button>
+    </form><br>
+    <hr><br>
+
+    <h3><b><u>Jeff Hartley</u></b></h3>
+</body>
+</html>
